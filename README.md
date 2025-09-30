@@ -108,7 +108,7 @@
   margin: 0 auto;
 }
     .search-box {
-      width: 300px;
+      width: 250px;
       padding: 4px;
       border-radius: 20px;
       border: 1px solid pink;
