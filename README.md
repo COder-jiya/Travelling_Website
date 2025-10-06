@@ -11,11 +11,11 @@
         .navbar {
             display: flex;
             background-color: lightgray;
-            padding: 10px 15px;
+            padding: 10px 10px;
             justify-content: space-evenly;
             align-items: left;
             box-shadow: 0 2px 4px gray;
-            /* color: pink; */
+            color: black;
             text-decoration: none;
             overflow: hidden;
         }
@@ -23,7 +23,8 @@
             background-color: lightblue;
             color: black;
             padding: 5px;
-            border-radius: 3px;  
+            border-radius: 3px; 
+            
         }
          .nav-links a {
       color: white;
@@ -49,24 +50,13 @@
     
     }
         .content {
-            padding: 20px;
+            padding: 10px;
             text-align: center;
+            
         }
-         /* h1 {
+         h1 {
             font-size: 40px;
-            margin-bottom: 10px;
-            background-color: lightblue;
-            border: 2px solid black; 
-            padding: 5px;
-            border-radius: 10px;
-            text-align: center;
-            animation-name: myAnimation;
-            animation-duration: 6s;
-            animation-iteration-count: infinite;
-        }  */
 
-        h1 {
-            font-size: 40px;
             margin-bottom: 10px;
             background-color: lightblue;
             border: 2px solid black; 
@@ -79,35 +69,59 @@
             animation-iteration-count: infinite;
             /* background-repeat: no-repeat;
             background-position: center; */
-        }
+            
+            
+        } 
+      
         @keyframes myAnimation {
-         from {background-color: lightblue;}
-         to {background-color: pink;}
+         from {background-image: url(https://external-preview.redd.it/nEjl5B2gCpXaXjqLNiwc_Q47LF4toKbYaGKadOkvBWk.jpg?width=640&crop=smart&auto=webp&s=736bd0b2496ead520e47180f5074de85f08adbef);}
+         to {background-image:url(https://www.shutterstock.com/image-photo/taj-mahal-main-view-on-260nw-2378053017.jpg);}
 }
         label{
             font-size: 20px;
         }  
     
         /* img {
-              width: 100%;
+              width: 500px;
               height: 400px;
-              max-width: 600px; 
+              min-width: 50; 
+              max-width: 600px;
               margin: 0 auto;
               display: flex;
-        }
+        } 
 
-            @media (max-width: 600px) {
+            @media (max-width: 500px) {
         img {
             max-width: 100%;
+            min-width: 50px;
             }
         }  */
-          img {
+
+     img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
-    .search-box {
+    /* .search-box {
+      width: 120px;
+      max-width: 60vw;
+      padding: 3px;
+      border-radius: 20px;
+      border: 1px solid pink;
+      outline: none;
+      margin:2px;
+    }
+    .search-btn {
+      padding: 5px 5px;
+      border: none;
+      border-radius: 20px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      width: 50px;
+    } */
+       .search-box {
       width: 250px;
       padding: 4px;
       border-radius: 20px;
@@ -149,12 +163,32 @@
          animation-name: aNnimation;
         animation-duration: 8s;
         animation-iteration-count: infinite;
+        width: auto;
 
         }
 
          @keyframes aNnimation {
          from {background-color:lightyellow;}
          to {background-color:lightcyan;}
+}
+.animated-bg {
+  width: 90vw;
+  max-width: 600px;
+  height: 300px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  background-size: cover;
+  background-position: center;
+  animation: imageSlide 12s infinite;
+}
+
+/* 3-image animation */
+@keyframes imageSlide {
+  0%   { background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/ae/c7/8c/caption.jpg?w=600&h=600&s=1'); }
+  33%  { background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Mysuru_Montage.jpg'); }
+  66%  { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv-vOEiKId8BGkFJBqWzcduFRM9BNPl0dEKA&s'); }
+  100% { background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/ae/c7/8c/caption.jpg?w=600&h=600&s=1'); }
 }
   
     </style>
@@ -164,7 +198,7 @@
     <div class="menu-btn">☰</div>
     <div class="nav-links">
         <a href="#home">Home</a>
-        <a href="#about">About </a>
+        <a href="about.html">About </a>
         <a href="Privacy.html">Privacy policy</a>
         <a href="login.html">Login</a>
     </div>
@@ -175,16 +209,18 @@
 
 </form>
 </div>
+
     
-        <h1 style="font-size: 38px; background-image: url(https://external-preview.redd.it/nEjl5B2gCpXaXjqLNiwc_Q47LF4toKbYaGKadOkvBWk.jpg?width=640&crop=smart&auto=webp&s=736bd0b2496ead520e47180f5074de85f08adbef)">Welcome To Our World</h1>
+        <h1 style="font-size: 5vw; background-image: url(https://external-preview.redd.it/nEjl5B2gCpXaXjqLNiwc_Q47LF4toKbYaGKadOkvBWk.jpg?width=640&crop=smart&auto=webp&s=736bd0b2496ead520e47180f5074de85f08adbef)">Welcome To Our World</h1>
     <p>
-        <h3>✨ Welcome to the Land of Wonders – India!✨</h3>
+        <h3 style="font-size: 4vw;">✨ Welcome to the Land of Wonders– India!✨</h3>
             India is not just a country, it’s an experience. From the snow-capped Himalayas to the golden deserts of Rajasthan, from the serene backwaters of Kerala to the bustling streets of Delhi and Mumbai – every corner tells a story. With its rich culture, ancient history, vibrant traditions, and breathtaking landscapes, India is truly a traveler’s paradise.
             Whether you seek spirituality, adventure, heritage, or modern city life, India offers a perfect blend of the old and the new. Join us as we explore the best places in India that capture the heart and soul of this incredible nation. 🌏❤️</p>
         
-        <h3><span style="background-color: #45a049; font-size: 40px;">🌟 Top 10 Best Places to Visit in India</span></h3>
+        <h3><span style="background-color: #45a049; font-size: 4dvw;">🌟 Top 10 Best Places to Visit in India</span></h3>
 
         <h2 >1. Taj Mahal, Agra</h2>
+        <div class="animated-bg"></div>
 
            <p style="text-align: center;"> The Taj Mahal is one of the most famous monuments in the world and a symbol of love, beauty, and architectural brilliance. 🌸<br>
             The Taj Mahal, located in Agra, Uttar Pradesh, is one of the most iconic monuments in the world and a symbol of eternal love. Built by the Mughal emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, it took about 22 years to complete, from 1632 to 1653. This breathtaking mausoleum is constructed from white marble that reflects different shades with the changing light of the sun and moon,
@@ -192,6 +228,7 @@
         <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/ae/c7/8c/caption.jpg?w=600&h=600&s=1" height="500px">
 </p>
         <h2>2. Jaipur, Rajasthan</h2>
+        <div class="animated-ab"></div>
 
         <p style="text-align: center;"> Known as the "Pink City" for its distinctive pink-colored buildings, Jaipur is a vibrant city that offers a rich blend of history, culture, and architecture. 🌆<br>
             Jaipur, the capital city of Rajasthan, is famously known as the "Pink City" due to the distinct pink hue of its buildings in the old city area. This vibrant city is a treasure trove of history, culture, and architectural marvels. Founded in 1727 by Maharaja Sawai Jai Singh II, Jaipur is renowned for its majestic forts, palaces, and 
@@ -237,8 +274,9 @@
 
 
 <p>✨ India is a land of incredible diversity, where every destination tells its own story through culture, history, and natural beauty. From the timeless elegance of the Taj Mahal to the serene backwaters of Kerala, the vibrant cities of Jaipur and Delhi, and the breathtaking landscapes of Leh-Ladakh, these top 10 places capture the essence of India’s charm.
-     Whether you seek adventure, spirituality, relaxation, or heritage, India promises unforgettable experiences at every corner. Start planning your journey and explore the magic that makes India truly extraordinary!</p> <br>
-
+    Whether you seek adventure, spirituality, relaxation, or heritage, India promises unforgettable experiences at every corner. Start planning your journey and explore the magic that makes India truly extraordinary!</p> <br>
+<h2>11.Noida</h2>
+<div class="animated-bg"></div>
      
 <div class="content">
    <p>Thank you for visiting our website! We appreciate your time and interest.</p>
@@ -254,6 +292,6 @@
     menuBtn.onclick = () => {
       navLinks.classList.toggle('show');
     };
-  </script>
+    </script>
 </body> 
 </html>
