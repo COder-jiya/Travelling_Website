@@ -6,6 +6,7 @@
   <title>Best Places to Visit in India</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     body {
@@ -131,7 +132,7 @@
       color: #fff;
       border: none;
       border-radius: 22px;
-      padding: 12px 32px;
+      padding: 12px 60px;
       font-size: 1.1em;
       font-weight: 600;
       cursor: pointer;
@@ -289,9 +290,30 @@
     padding: 14px 10px;
   }
 }
+
+.price-card {
+  background: rgba(173, 216, 230, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  margin: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.price-card:hover {
+  transform: scale(1.05);
+  background: rgba(100, 181, 246, 0.7);
+}
+.btn-primary{
+  font-size: 14px;
+  text-align: center;
+  
+}
   </style>
 </head>
 <body>
+  
   <div class="navbar">
     <div class="menu-btn"><i class="fa fa-bars"></i></div>
     <div class="nav-links">
@@ -301,12 +323,16 @@
       <a href="login.html">Login</a>
       <a href="contact.html">Contact</a>
        <a href="Discover more.html">Discover more</a>
+    
     </div>
     <form action="https://www.google.com/search" method="get" style="margin:0;">
       <input type="text" name="q" class="search-box" placeholder="Search...">
       <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
     </form>
-  </div>
+    </div>
+    
+  
+  
   
 
   <div class="hero">
@@ -319,7 +345,7 @@
       <i class="fa fa-map-marker-alt"></i> Discover More
     </button> -->
     <a href="Discover more.html" class="discover-btn">
-  <i class="fa fa-map-marker-alt"></i> Discover More
+  <i class="fa fa-map-marker-alt"></i> <span style="margin-right: 8px;">Discover More  </span>
 </a>
   </div>
 
@@ -331,6 +357,7 @@
       <div class="place-content">
         <div class="place-title">1. Agra (Taj Mahal)</div>
         <p class="place-desc">Home to the iconic Taj Mahal, Agra is a symbol of love and a UNESCO World Heritage Site. The city also boasts Agra Fort and Fatehpur Sikri, making it a must-visit for history lovers.</p>
+     <a href="trip_detail.html" class="btn btn-primary">Book trip</a>
       </div>
     </div>
     <div class="place">
@@ -340,6 +367,7 @@
       <div class="place-content">
         <div class="place-title">2. Jaipur (Rajasthan)</div>
         <p class="place-desc">Known as the Pink City, Jaipur is famous for its royal palaces, vibrant bazaars, and majestic forts like Amber Fort and City Palace. Experience the rich culture and heritage of Rajasthan here.</p>
+      <a href="trip_detail.html" class="btn btn-primary">Book trip</a>
       </div>
     </div>
     <div class="place">
@@ -349,6 +377,7 @@
       <div class="place-content">
         <div class="place-title">3. Goa</div>
         <p class="place-desc">Goa is India's party capital, known for its golden beaches, lively nightlife, Portuguese heritage, and delicious seafood. Perfect for relaxation and adventure alike.</p>
+      <a href="trip_detail.html" class="btn btn-primary">Book trip</a>
       </div>
     </div>
     <div class="place">
@@ -357,7 +386,8 @@
         </a>
       <div class="place-content">
         <div class="place-title">4. Kerala (Backwaters & Munnar)</div>
-        <p class="place-desc">Kerala offers tranquil backwaters, lush tea gardens in Munnar, and beautiful beaches. Enjoy houseboat cruises, wildlife, and Ayurveda in God's Own Country.</p>
+       <p class="place-desc">Kerala offers tranquil backwaters, lush tea gardens in Munnar, and beautiful beaches. Enjoy houseboat cruises, wildlife, and Ayurveda in God's Own Country.</p>
+        <a href="trip_detail.html" class="btn btn-primary">Book trip</a>
       </div>
     </div>
     <div class="place">
@@ -367,6 +397,7 @@
        <div class="place-content">
         <div class="place-title">5. Varanasi</div>
         <p class="place-desc">One of the world's oldest cities, Varanasi is the spiritual heart of India. Witness the mesmerizing Ganga Aarti and explore ancient temples along the ghats.</p>
+     <a href="trip_detail.html" class="btn btn-primary">Book trip</a>
       </div>
     </div>
     <div class="place">
@@ -376,6 +407,47 @@
       <div class="place-content">
         <div class="place-title">6. Leh-Ladakh</div>
         <p class="place-desc">A paradise for adventure seekers, Leh-Ladakh offers breathtaking landscapes, high mountain passes, monasteries, and unique Tibetan culture.</p>
+      <a href="trip_detail.html" class="btn btn-primary">Book trip</a>
+      </div>
+    </div>
+     <div class="place">
+        <a href="Discover more.html">
+      <img src="https://himachaltourisminfoblog.com/wp-content/uploads/2024/04/Sissu_leh_ladakh-1895x760.jpg" alt="Leh-Ladakh">
+        </a>
+      <div class="place-content">
+        <div class="place-title">7. Leh-Ladakh</div>
+        <p class="place-desc">A paradise for adventure seekers, Leh-Ladakh offers breathtaking landscapes, high mountain passes, monasteries, and unique Tibetan culture.</p>
+      <a href="trip_detail.html" class="btn btn-primary">Book trip</a>
+      </div>
+    </div>
+     <div class="place">
+        <a href="Discover more.html">
+      <img src="https://himachaltourisminfoblog.com/wp-content/uploads/2024/04/Sissu_leh_ladakh-1895x760.jpg" alt="Leh-Ladakh">
+        </a>
+      <div class="place-content">
+        <div class="place-title">8. Leh-Ladakh</div>
+        <p class="place-desc">A paradise for adventure seekers, Leh-Ladakh offers breathtaking landscapes, high mountain passes, monasteries, and unique Tibetan culture.</p>
+      <a href="trip_detail.html" class="btn btn-primary">Book trip</a>
+      </div>
+    </div>
+     <div class="place">
+        <a href="Discover more.html">
+      <img src="https://himachaltourisminfoblog.com/wp-content/uploads/2024/04/Sissu_leh_ladakh-1895x760.jpg" alt="Leh-Ladakh">
+        </a>
+      <div class="place-content">
+        <div class="place-title">9. Leh-Ladakh</div>
+        <p class="place-desc">A paradise for adventure seekers, Leh-Ladakh offers breathtaking landscapes, high mountain passes, monasteries, and unique Tibetan culture.</p>
+      <a href="trip_detail.html" class="btn btn-primary">Book trip</a>
+      </div>
+    </div>
+     <div class="place">
+        <a href="Discover more.html">
+      <img src="https://himachaltourisminfoblog.com/wp-content/uploads/2024/04/Sissu_leh_ladakh-1895x760.jpg" alt="Leh-Ladakh">
+        </a>
+      <div class="place-content">
+        <div class="place-title">10. Leh-Ladakh</div>
+        <p class="place-desc">A paradise for adventure seekers, Leh-Ladakh offers breathtaking landscapes, high mountain passes, monasteries, and unique Tibetan culture.</p>
+      <a href="trip_detail.html" class="btn btn-primary">Book trip</a>
       </div>
     </div>
   </div>
@@ -383,9 +455,9 @@
   <footer>
     <div>Made with <i class="fa fa-heart" style="color:#e57373"></i> | Explore India | &copy; 2025</div>
     <div class="footer-social">
-      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-      <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://x.com/?lang=en" title="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
   </footer>
 
@@ -396,5 +468,8 @@
       navLinks.classList.toggle('show');
     };
   </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
